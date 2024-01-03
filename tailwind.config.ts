@@ -13,6 +13,8 @@ const config: Config = {
     extend: {
       backgroundImage: {
         "body-texture": "url(/images/bg-gif.gif)",
+        rug: "url(/images/rug-grad.svg)",
+        "line-grad": "var(--line-grad)",
       },
       colors: {
         border: "hsl(var(--border))",

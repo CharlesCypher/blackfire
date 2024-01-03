@@ -25,5 +25,7 @@
         --ring: 240 10% 3.9%;
 
         --radius: 0.5rem;
+
+        --line-grad: linear-gradient(90deg, #c057f2, #f2e357 25%, #9bf257 50%, #f2b457 75%, #579ef2);
     }
 }
