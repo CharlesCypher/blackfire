@@ -2,6 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  font-size: "Neue Power", sans-serif !important;
+@layer base {
+    :root {
+        --background: 0 0% 1%;
+
+        --card: 0 0% 100%;
+
+        --popover: 0 0% 100%;
+
+        --primary: 240 5.9% 10%;
+
+        --secondary: 240 4.8% 95.9%;
+
+        --muted: 240 4.8% 95.9%;
+
+        --accent: 240 4.8% 95.9%;
+
+        --destructive: 0 84.2% 60.2%;
+
+        --border: 240 5.9% 90%;
+        --input: 240 5.9% 90%;
+        --ring: 240 10% 3.9%;
+
+        --radius: 0.5rem;
+    }
 }
