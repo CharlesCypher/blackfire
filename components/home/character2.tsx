@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Character2() {
   return (
-    <section id="character2" className="sect py-16 invisible opacity-0">
+    <section id="character2" data-sect className="py-16 invisible">
       <div className="container">
         <div className="flex flex-col">
           <div className="">

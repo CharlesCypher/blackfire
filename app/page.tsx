@@ -2,6 +2,7 @@
 
 import React, { useLayoutEffect } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { fadeIn } from "@/animations/section";
 import Navbar from "@/components/home/navbar";
 import TopBanner from "@/components/home/top-banner";
 import Hero from "@/components/home/hero";
@@ -15,30 +16,29 @@ import gsap from "gsap";
 
 export default function Home() {
   useLayoutEffect(() => {
-    const section = document.querySelectorAll(".sect");
+    const section = document.querySelectorAll("[data-sect]");
     const sections = gsap.utils.toArray(section);
-    const title = document.querySelectorAll("[data-title-text]");
-    const titles = gsap.utils.toArray(title);
-    const image = document.querySelectorAll("[data-sect-img]");
-    const images = gsap.utils.toArray(image);
+
+    // const title = document.querySelectorAll("[data-title-text]");
+    // const titles = gsap.utils.toArray(title);
+    // const image = document.querySelectorAll("[data-sect-img]");
+    // const images = gsap.utils.toArray(image);
 
     const ctx = gsap.context(() => {
       gsap.registerPlugin(ScrollTrigger);
 
       sections.forEach((section: any) => {
         const h2 = section.querySelector("[data-title-text]");
+        const p = section.querySelector("[data-title-text]");
         const img = section.querySelector("[data-sect-img]");
         ScrollTrigger.create({
           trigger: section,
           start: "-100px",
           end: "bottom bottom",
           onEnter: () => {
-            const tl = gsap.timeline({ defaults: { duration: 1, delay: 0, ease: "power3.inOut" } });
-            tl.to(section, { autoAlpha: 1 })
-              .fromTo(h2, { opacity: 0, y: 25 }, { opacity: 1, y: 0 })
-              .fromTo(img, { opacity: 0, y: 25 }, { opacity: 1, y: 0 });
+            fadeIn(section, h2, p, img);
           },
-          toggleActions: "play none reverse none",
+          toggleActions: "play none none none",
           once: true,
         });
       });
