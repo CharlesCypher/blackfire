@@ -16,14 +16,22 @@ export default function Hero() {
             className="absolute w-full h-auto bottom-0 left-0 z-10"
             alt="detroit character"
             loading="eager"
+            priority
           />
-          <Image src={"/images/hero-rect-grad.png"} width={375} height={430} className="relative w-full h-full" alt="background-gradient" />
+          <Image
+            src={"/images/hero-rect-grad.png"}
+            width={375}
+            height={430}
+            className="relative w-full h-full"
+            alt="background-gradient"
+            loading="eager"
+          />
         </div>
         <div className="">
           <p className="uppercase">Build your collection of the world’s most cutting-edge digital art</p>
           <div className="relative w-full h-1 bg-line-grad"></div>
           <div className="">
-            <Image src={"/images/hero-green-bar.png"} width={290} height={155} className="" alt="coyote cojo green club" />
+            <Image src={"/images/hero-green-bar.png"} width={290} height={155} className="w-auto h-auto" alt="coyote cojo green club" />
           </div>
         </div>
       </section>
