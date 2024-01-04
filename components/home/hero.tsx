@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <main>
-      <section className="container py-16">
+      <section id="home" className="container py-16">
         <div className="">
           <h1>BLACK FIRE</h1>
           <h2>MALE FORCE</h2>

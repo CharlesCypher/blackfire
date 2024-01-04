@@ -15,6 +15,7 @@ const config: Config = {
         "body-texture": "url(/images/bg-gif.gif)",
         rug: "url(/images/rug-grad.svg)",
         "line-grad": "var(--line-grad)",
+        "rect-grad": "url(/images/rect-grad.svg)",
       },
       colors: {
         border: "hsl(var(--border))",
@@ -47,6 +48,20 @@ const config: Config = {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      keyframes: {
+        ticker: {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-50%)" },
+        },
+        tickeralt: {
+          from: { transform: "translateX(-50%)" },
+          to: { transform: "translateX(0)" },
+        },
+      },
+      animation: {
+        ticker: "ticker 40s linear infinite",
+        tickeralt: "tickeralt 40s linear infinite",
       },
     },
   },

@@ -29,3 +29,9 @@
         --line-grad: linear-gradient(90deg, #c057f2, #f2e357 25%, #9bf257 50%, #f2b457 75%, #579ef2);
     }
 }
+
+.bdr {
+    border: 1px solid;
+    border-image: linear-gradient(90deg, #c057f2, #f2e357 25%, #9bf257 50%, #f2b457 75%, #579ef2);
+    border-image-slice: 1;
+}

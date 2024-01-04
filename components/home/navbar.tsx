@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <header className="max-w-[90%] mx-auto pt-3">
+    <header className="container pt-3">
       <nav className="flex items-center justify-between">
         <h3>
           <Link href={"/"}>BlackFire</Link>
