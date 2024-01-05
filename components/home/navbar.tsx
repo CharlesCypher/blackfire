@@ -5,7 +5,9 @@ export default function Navbar() {
     <header className="container py-3">
       <nav className="flex items-center justify-between">
         <h3>
-          <Link href={"/"}>BlackFire</Link>
+          <Link href={"/"} className="text-lg">
+            BlackFire
+          </Link>
         </h3>
         <div className="w-8">
           <span className="w-full h-0.5 bg-white block"></span>
