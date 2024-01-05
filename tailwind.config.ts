@@ -10,6 +10,9 @@ const config: Config = {
         "2xl": "1400px",
       },
     },
+    fontFamily: {
+      glitch: ["var(--font-glitch)"],
+    },
     extend: {
       backgroundImage: {
         "body-texture": "url(/images/bg-gif.gif)",

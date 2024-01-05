@@ -35,3 +35,11 @@
     border-image: linear-gradient(90deg, #c057f2, #f2e357 25%, #9bf257 50%, #f2b457 75%, #579ef2);
     border-image-slice: 1;
 }
+
+.neon {
+    text-shadow: 2px 0 16px #579ef2, 0 0 10px #579ef2;
+}
+
+.glitch-neon {
+    text-shadow: 1px 1px #f2b457, 1px 1px 7px #579ef2;
+}

@@ -6,12 +6,17 @@ export default function Character1() {
       <div className="container">
         <div className="flex flex-col">
           <div className="">
-            <h2 className="" data-title-text="Character1">
+            <h2 className="opacity-0 translate-y-7" data-title-text="Character1">
               Character 1
             </h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            <p data-sect-paragraph className="opacity-0 translate-y-7">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+            </p>
           </div>
-          <div data-sect-img="avatar1" className="relative bg-rect-grad bg-center bg-cover bg-no-repeat w-[300px] h-[290px] mt-[36vh]">
+          <div
+            data-sect-img="avatar1"
+            className="relative bg-rect-grad bg-center bg-cover bg-no-repeat w-[300px] h-[290px] mt-[36vh] opacity-0 -translate-x-7"
+          >
             <Image
               src={"/images/avatar-model-baseball.png"}
               width={300}

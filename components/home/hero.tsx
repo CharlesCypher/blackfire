@@ -5,10 +5,10 @@ export default function Hero() {
     <main>
       <section id="home" className="container py-16">
         <div className="">
-          <h1>BLACK FIRE</h1>
-          <h2>MALE FORCE</h2>
+          <h1 className="text-[11.5vw] font-black neon uppercase whitespace-nowrap leading-[110%]">BLACK ENERGY</h1>
+          <h2 className="font-glitch text-[7vw] glitch-neon font-bold uppercase tracking-[5px] whitespace-nowrap leading-[110%]">FEMALE FORCE</h2>
         </div>
-        <div className="relative w-full h-full">
+        <div className="relative w-full h-full my-6 lg:py-0">
           <Image
             src={"/images/hero-char.png"}
             width={375}

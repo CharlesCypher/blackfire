@@ -19,21 +19,16 @@ export default function Home() {
     const section = document.querySelectorAll("[data-sect]");
     const sections = gsap.utils.toArray(section);
 
-    // const title = document.querySelectorAll("[data-title-text]");
-    // const titles = gsap.utils.toArray(title);
-    // const image = document.querySelectorAll("[data-sect-img]");
-    // const images = gsap.utils.toArray(image);
-
     const ctx = gsap.context(() => {
       gsap.registerPlugin(ScrollTrigger);
 
       sections.forEach((section: any) => {
         const h2 = section.querySelector("[data-title-text]");
-        const p = section.querySelector("[data-title-text]");
+        const p = section.querySelector("[data-sect-paragraph]");
         const img = section.querySelector("[data-sect-img]");
         ScrollTrigger.create({
           trigger: section,
-          start: "-100px",
+          start: "-400px",
           end: "bottom bottom",
           onEnter: () => {
             fadeIn(section, h2, p, img);
