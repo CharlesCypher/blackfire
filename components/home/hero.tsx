@@ -27,11 +27,11 @@ export default function Hero() {
             loading="eager"
           />
         </div>
-        <div className="">
-          <p className="uppercase">Build your collection of the world’s most cutting-edge digital art</p>
+        <div className="mt-24">
           <div className="relative w-full h-1 bg-line-grad"></div>
-          <div className="">
-            <Image src={"/images/hero-green-bar.png"} width={290} height={155} className="w-auto h-auto" alt="coyote cojo green club" />
+          <div className="relative mt-16">
+            <p className="mb-32 -mt-16 uppercase">Build your collection of the world’s most cutting-edge digital art</p>
+            <Image src={"/images/hero-green-bar.png"} width={290} height={155} className="w-auto h-auto -mt-28" alt="coyote cojo green club" />
           </div>
         </div>
       </section>
